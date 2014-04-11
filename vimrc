@@ -31,7 +31,6 @@ filetype plugin indent on
 let &colorcolumn=join(range(73,999),",")                    "Highlight anything over 72 columns
 
 au BufRead,BufNewFile *.vcl,*.vtc :set ft=vcl               "VCL syntax highlighting
-au! Syntax vcl source ~/.vim/syntax/vcl.vim
 
 "Vundle config
 set rtp+=~/.vim/bundle/vundle/
@@ -40,6 +39,7 @@ call vundle#rc()
 Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-rails.git'
+Bundle 'smerrill/vcl-vim-plugin.git'
 "Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
 
