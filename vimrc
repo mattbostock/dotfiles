@@ -30,7 +30,7 @@ filetype plugin indent on
 
 let &colorcolumn=join(range(73,999),",")                    "Highlight anything over 72 columns
 
-au BufRead,BufNewFile *.vcl :set ft=vcl                     "VCL syntax highlighting
+au BufRead,BufNewFile *.vcl,*.vtc :set ft=vcl               "VCL syntax highlighting
 au! Syntax vcl source ~/.vim/syntax/vcl.vim
 
 "Disable arrow keys and page up/down keys
