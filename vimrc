@@ -33,28 +33,6 @@ let &colorcolumn=join(range(73,999),",")                    "Highlight anything 
 au BufRead,BufNewFile *.vcl,*.vtc :set ft=vcl               "VCL syntax highlighting
 au! Syntax vcl source ~/.vim/syntax/vcl.vim
 
-"Disable arrow keys and page up/down keys
-nnoremap <buffer> <Left> <Esc>:echoerr "Use h"<CR>
-nnoremap <buffer> <Right> <Esc>:echoerr "Use l"<CR>
-nnoremap <buffer> <Up> <Esc>:echoerr "Use k"<CR>
-nnoremap <buffer> <Down> <Esc>:echoerr "Use j"<CR>
-nnoremap <buffer> <PageUp> <Esc>:echoerr "Use ^F"<CR>
-nnoremap <buffer> <PageDown> <Esc>:echoerr "Use ^B"<CR>
-
-inoremap <buffer> <Left> <Esc>:echoerr "Use h"<CR>
-inoremap <buffer> <Right> <Esc>:echoerr "Use l"<CR>
-inoremap <buffer> <Up> <Esc>:echoerr "Use k"<CR>
-inoremap <buffer> <Down> <Esc>:echoerr "Use j"<CR>
-inoremap <buffer> <PageUp> <Esc>:echoerr "Use ^B"<CR>
-inoremap <buffer> <PageDown> <Esc>:echoerr "Use ^F"<CR>
-
-vnoremap <buffer> <Left> <Esc>:echoerr "Use h"<CR>
-vnoremap <buffer> <Right> <Esc>:echoerr "Use l"<CR>
-vnoremap <buffer> <Up> <Esc>:echoerr "Use k"<CR>
-vnoremap <buffer> <Down> <Esc>:echoerr "Use j"<CR>
-vnoremap <buffer> <PageUp> <Esc>:echoerr "Use ^B"<CR>
-vnoremap <buffer> <PageDown> <Esc>:echoerr "Use ^F"<CR>
-
 "Vundle config
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
