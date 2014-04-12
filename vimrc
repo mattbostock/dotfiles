@@ -39,17 +39,17 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown       "Markdown, not modul
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'airblade/vim-gitgutter'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-rails.git'
-Bundle 'smerrill/vcl-vim-plugin.git'
-"Bundle 'scrooloose/syntastic'
-Bundle 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-rails.git'
+Plugin 'smerrill/vcl-vim-plugin.git'
+"Plugin 'scrooloose/syntastic'
+Plugin 'bling/vim-airline'
 
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 "Airline status config
 set laststatus=2                                            "Always show status bar
