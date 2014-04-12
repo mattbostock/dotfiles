@@ -14,7 +14,8 @@ helper = /opt/boxen/bin/boxen-git-credential
 	name = Matt Bostock
 
 [push]
-	default = simple
+        # Use current rather than simple for compat with older Git versions
+        default = current
 
 [alias]
         st = status
