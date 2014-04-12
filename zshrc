@@ -16,6 +16,7 @@ ZSH_THEME="tonotdo"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias wdiff="wdiff -n -w $'\033[30;41m' -x $'\033[0m' -y $'\033[30;42m' -z $'\033[0m'"
+alias vi="vim"
 
 # Wikipedia lookup
 wikip () { dig +short txt "$*".wp.dg.cx; }
