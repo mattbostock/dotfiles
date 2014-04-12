@@ -32,6 +32,8 @@ let &colorcolumn=join(range(73,999),",")                    "Highlight anything 
 
 au BufRead,BufNewFile *.vcl,*.vtc :set ft=vcl               "VCL syntax highlighting
 
+autocmd BufNewFile,BufRead *.json set filetype=javascript   "JSON syntax highlighting
+
 "Vundle config
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
