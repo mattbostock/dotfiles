@@ -57,6 +57,7 @@ Plugin 'honza/vim-snippets'
 
 "Airline status config
 set laststatus=2                                            "Always show status bar
+set noshowmode                                              "Don't show default mode indicator, Airline does that
 let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tagbar#enabled = 1
 let g:airline_theme             = 'solarized'
