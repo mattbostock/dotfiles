@@ -42,6 +42,7 @@ call vundle#rc()
 "Let Vundle manage Vundle
 Plugin 'gmarik/vundle'
 
+Plugin 'https://github.com/altercation/vim-colors-solarized.git'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-rails.git'
