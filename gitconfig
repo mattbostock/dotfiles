@@ -10,7 +10,7 @@ helper = /opt/boxen/bin/boxen-git-credential
 	editor = /usr/bin/vim
 
 [user]
-	email = matt.bostock@digital.cabinet-office.gov.uk
+	email = matt@mattbostock.com
 	name = Matt Bostock
 
 [push]
