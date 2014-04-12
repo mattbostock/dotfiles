@@ -1,7 +1,3 @@
-"Enable Solarized colour scheme: https://github.com/altercation/vim-colors-solarized
-set background=dark
-colorscheme solarized
-
 set shiftround                                              "Indent by multiples of shiftwidth
 set expandtab                                               "Use softtabstop spaces instead of tab characters for indentation
 set shiftwidth=2                                            "Indent by 2 spaces when using >>, <<, == etc.
@@ -68,3 +64,7 @@ let g:airline_powerline_fonts   = 1
 "CtrlP
 let g:ctrlp_working_path_mode = 'ra'                        "Set current working directory to be repository root if possible
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
+"Enable Solarized colour scheme: https://github.com/altercation/vim-colors-solarized
+set background=dark
+colorscheme solarized
