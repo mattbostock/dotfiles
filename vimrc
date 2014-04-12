@@ -39,6 +39,9 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown       "Markdown, not modul
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+"Let Vundle manage Vundle
+Plugin 'gmarik/vundle'
+
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-rails.git'
