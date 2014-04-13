@@ -49,7 +49,7 @@ Plugin 'tpope/vim-rails.git'
 Plugin 'smerrill/vcl-vim-plugin.git'
 "Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
-
+Plugin 'tpope/vim-fugitive.git'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
