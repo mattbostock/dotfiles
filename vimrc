@@ -17,8 +17,6 @@ match ErrorMsg '\s\+$'                                                  "Highlig
 
 autocmd FileType gitcommit setlocal spell                               "Spellcheck commit messages
 
-autocmd FileType rst setlocal linebreak                                 "Soft-wrap Sphinx documentation
-
 filetype plugin indent on
 
 let &colorcolumn=join(range(73,999),",")                                "Highlight anything over 72 columns
