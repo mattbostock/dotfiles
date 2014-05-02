@@ -15,7 +15,8 @@ syntax on                                                               "Enable 
 filetype on                                                             "Detect file type
 match ErrorMsg '\s\+$'                                                  "Highlight trailing whitespace
 
-autocmd FileType gitcommit setlocal spell                               "Spellcheck commit messages
+autocmd FileType rst,gitcommit,markdown setlocal spell                  "Spellcheck
+
 
 filetype plugin indent on
 
