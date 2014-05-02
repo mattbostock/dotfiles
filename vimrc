@@ -15,13 +15,11 @@ syntax on                                                               "Enable 
 filetype on                                                             "Detect file type
 match ErrorMsg '\s\+$'                                                  "Highlight trailing whitespace
 
-autocmd FileType rst,gitcommit,markdown setlocal spell                  "Spellcheck
-
-
 filetype plugin indent on
 
 let &colorcolumn=join(map(copy(range(1,999)), "'+'.v:val"), ",")        "Highlight columns over value of &textwidth
 
+autocmd FileType rst,gitcommit,markdown setlocal spell                  "Spellcheck
 autocmd BufNewFile,BufRead *.vcl,*.vtc :set ft=vcl                      "VCL syntax highlighting
 autocmd BufNewFile,BufRead *.json set filetype=javascript               "JSON syntax highlighting
 autocmd BufNewFile,BufRead *.md set filetype=markdown                   "Markdown, not modular2 for .md files
