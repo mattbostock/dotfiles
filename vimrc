@@ -22,8 +22,7 @@ filetype plugin indent on
 
 let &colorcolumn=join(map(copy(range(1,999)), "'+'.v:val"), ",")        "Highlight columns over value of &textwidth
 
-au BufRead,BufNewFile *.vcl,*.vtc :set ft=vcl                           "VCL syntax highlighting
-
+autocmd BufNewFile,BufRead *.vcl,*.vtc :set ft=vcl                      "VCL syntax highlighting
 autocmd BufNewFile,BufRead *.json set filetype=javascript               "JSON syntax highlighting
 autocmd BufNewFile,BufRead *.md set filetype=markdown                   "Markdown, not modular2 for .md files
 
