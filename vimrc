@@ -20,7 +20,7 @@ autocmd FileType rst,gitcommit,markdown setlocal spell                  "Spellch
 
 filetype plugin indent on
 
-let &colorcolumn=join(range(73,999),",")                                "Highlight anything over 72 columns
+let &colorcolumn=join(map(copy(range(1,999)), "'+'.v:val"), ",")        "Highlight columns over value of &textwidth
 
 au BufRead,BufNewFile *.vcl,*.vtc :set ft=vcl                           "VCL syntax highlighting
 
