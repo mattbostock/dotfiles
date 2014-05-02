@@ -46,7 +46,6 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
-Plugin 'chase/vim-ansible-yaml'
 Plugin 'junegunn/goyo.vim'
 
 "Airline status config
