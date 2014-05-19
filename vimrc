@@ -4,6 +4,8 @@ set shiftwidth=2                                                        "Indent 
 set softtabstop=2                                                       "Indent by 2 spaces when pressing <TAB>
 set autoindent                                                          "Keep indentation from previous line
 
+autocmd FileType go setlocal noexpandtab                                "Use hard tabs for golang
+
 set hlsearch                                                            "Highlight all search matches
 set incsearch                                                           "Start highlighting search matches as you type
 
