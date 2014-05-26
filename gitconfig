@@ -30,6 +30,13 @@ helper = /opt/boxen/bin/boxen-git-credential
         # Run a command in the git repo root, e.g. 'git exec rspec'
 	exec = "!exec "
 
+        # Show branches by date of last commit
+        brdate = "! f() { \
+          for k in $(git branch $@ | sed 's/^..//; s/ .*//'); do \
+            echo "$(git log -1 --pretty='%Cgreen%ci %Cblue(%cr)%Creset ' $k) $k"; \
+          done | sort -r; \
+        }; f"
+
         # Delete merged branches.
         brc = "!f() { \
           git branch --merged master |\
