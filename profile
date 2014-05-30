@@ -11,4 +11,4 @@ if [ -n "${BASH_VERSION}" ]; then
 fi
 
 # Initialise ssh-agent
-source .ssh-agent-setup.sh
+source ${HOME}/.ssh-agent-setup.sh
