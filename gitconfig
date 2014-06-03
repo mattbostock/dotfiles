@@ -26,6 +26,7 @@ helper = /opt/boxen/bin/boxen-git-credential
         lg = log --pretty=oneline --topo-order --graph --abbrev-commit --decorate
         fpush = push -f origin head
         wdiff = diff --color-words
+        re = !git rebase -i origin/master
 
         # Run a command in the git repo root, e.g. 'git exec rspec'
 	exec = "!exec "
