@@ -62,7 +62,7 @@ plugins=(autojump git osx vagrant)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+export GOROOT=`go env GOROOT`
 export GOPATH=$HOME/go
 export PATH=$PATH:$HOME/bin:/usr/local/bin:$GOPATH/bin
 # export MANPATH="/usr/local/man:$MANPATH"
