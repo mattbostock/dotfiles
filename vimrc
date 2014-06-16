@@ -5,6 +5,7 @@ set softtabstop=2                                                       "Indent 
 set autoindent                                                          "Keep indentation from previous line
 
 autocmd FileType go setlocal noexpandtab                                "Use hard tabs for golang
+autocmd FileType php setlocal shiftwidth=4 | setlocal softtabstop=4     "Use 4 spaces for PHP as per PSR standards
 
 set hlsearch                                                            "Highlight all search matches
 set incsearch                                                           "Start highlighting search matches as you type
