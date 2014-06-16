@@ -63,7 +63,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$HOME/bin:/usr/local/bin:$GOPATH/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Preferred editor
