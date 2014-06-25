@@ -4,7 +4,6 @@ set shiftwidth=2                                                        "Indent 
 set softtabstop=2                                                       "Indent by 2 spaces when pressing <TAB>
 set autoindent                                                          "Keep indentation from previous line
 
-autocmd FileType go setlocal noexpandtab                                "Use hard tabs for golang
 autocmd FileType php setlocal shiftwidth=4 | setlocal softtabstop=4     "Use 4 spaces for PHP as per PSR standards
 
 set hlsearch                                                            "Highlight all search matches
@@ -26,10 +25,15 @@ autocmd FileType rst,gitcommit,markdown setlocal spell                  "Spellch
 autocmd BufNewFile,BufRead *.vcl,*.vtc :set ft=vcl                      "VCL syntax highlighting
 autocmd BufNewFile,BufRead *.json set filetype=javascript               "JSON syntax highlighting
 autocmd BufNewFile,BufRead *.md set filetype=markdown                   "Markdown, not modular2 for .md files
-autocmd BufNewFile,BufRead *.go set filetype=go                         "Golang
 
-"Golang
+"Golang, as per the README in $GOROOT/misc/vim
+filetype off
+filetype plugin indent off
 set rtp+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
+autocmd FileType go setlocal noexpandtab | setlocal softtabstop=8 | setlocal shiftwidth=8
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 "Vundle config
 set rtp+=~/.vim/bundle/vundle/
