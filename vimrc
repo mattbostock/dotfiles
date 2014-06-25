@@ -34,6 +34,7 @@ filetype plugin indent on
 syntax on
 autocmd FileType go setlocal noexpandtab | setlocal softtabstop=8 | setlocal shiftwidth=8
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
+let g:gofmt_command = "goimports"
 
 "Vundle config
 set rtp+=~/.vim/bundle/vundle/
