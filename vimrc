@@ -73,4 +73,5 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 "Enable Solarized colour scheme: https://github.com/altercation/vim-colors-solarized
 set background=dark
+let g:solarized_termtrans = 1
 colorscheme solarized
