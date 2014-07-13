@@ -14,7 +14,7 @@ Install [rcm](https://github.com/thoughtbot/rcm), which helps manage dotfiles.
 
 Install:
 
-    rcup -d dotfiles -x README.md -x LICENSE
+    rcup -x README.md -x LICENSE
 
 This will create symlinks for config files in your home directory.
 
