@@ -49,3 +49,5 @@ helper = /opt/boxen/bin/boxen-git-credential
         diff = auto
         branch = auto
         status = auto
+[diff]
+	algorithm = patience
