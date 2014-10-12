@@ -76,3 +76,5 @@ export EDITOR='vim'
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# Disable right-side prompt that 'tonotodo' theme configures
+export RPROMPT=''
