@@ -7,7 +7,6 @@ helper = /opt/boxen/bin/boxen-git-credential
 
 [core]
         excludesfile = /opt/boxen/config/git/gitignore
-	editor = /usr/bin/vim
 
 [user]
 	email = matt@mattbostock.com
