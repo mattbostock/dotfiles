@@ -12,3 +12,17 @@ fi
 
 # Initialise ssh-agent
 source ${HOME}/.ssh-agent-setup.sh
+
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+# Just say no
+export VAGRANT_GOVUK_NFS=no
+
+# Set paths
+export GOROOT=`go env GOROOT`
+export GOPATH=$HOME/go
+
+export PATH=$HOME/bin:/usr/local/bin:$GOPATH/bin:$PATH
+
+# Preferred editor
+export EDITOR='vim'

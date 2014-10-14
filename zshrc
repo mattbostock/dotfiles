@@ -1,8 +1,3 @@
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-
-# Just say no
-export VAGRANT_GOVUK_NFS=no
-
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -62,13 +57,7 @@ plugins=(autojump git osx vagrant)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export GOROOT=`go env GOROOT`
-export GOPATH=$HOME/go
-export PATH=$HOME/bin:/usr/local/bin:$GOPATH/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
-
-# Preferred editor
-export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
