@@ -58,6 +58,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'junegunn/goyo.vim'
+Plugin 'ConradIrwin/vim-bracketed-paste.git'
 
 "Airline status config
 set laststatus=2                                                        "Always show status bar
