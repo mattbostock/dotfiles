@@ -11,7 +11,7 @@ set incsearch                                                           "Start h
 
 set cursorline                                                          "Highlight current line
 set ruler                                                               "Show ruler
-set number                                                              "Show line numbers
+set number                                                              "Show current line number
 
 syntax on                                                               "Enable syntax highlighting
 filetype on                                                             "Detect file type
