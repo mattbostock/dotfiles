@@ -27,7 +27,7 @@
 	<key>CopyLastNewline</key>
 	<false/>
 	<key>CopySelection</key>
-	<true/>
+	<false/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Solarized Dark</key>
@@ -325,7 +325,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>443 399 924 485 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>604 382 890 601 0 0 1680 1028 </string>
+	<string>0 0 1680 1050 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1027,7 +1027,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-10-12T13:01:34Z</date>
+	<date>2014-10-31T16:22:58Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1061,7 +1061,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>Lucida Grande</string>
+	<string>.Lucida Grande UI</string>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WindowStyle</key>
