@@ -24,5 +24,8 @@ export GOPATH=$HOME/go
 
 export PATH=$HOME/bin:/usr/local/bin:$GOPATH/bin:$PATH
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 # Preferred editor
 export EDITOR='vim'
