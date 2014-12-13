@@ -65,6 +65,10 @@ Plugin 'honza/vim-snippets'
 Plugin 'junegunn/goyo.vim'
 Plugin 'ConradIrwin/vim-bracketed-paste.git'
 
+"Tagbar config
+autocmd FileType * nested :call tagbar#autoopen(0)                      "Always open Tagbar for supported files
+let g:tagbar_show_linenumbers = 1                                       "Show absolute line numbers
+
 "Airline status config
 set laststatus=2                                                        "Always show status bar
 set noshowmode                                                          "Don't show default mode indicator, Airline does that
