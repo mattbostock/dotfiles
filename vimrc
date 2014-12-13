@@ -13,6 +13,11 @@ set cursorline                                                          "Highlig
 set ruler                                                               "Show ruler
 set number                                                              "Show current line number
 
+" Faster redraws
+" (cursorline, syntax highlighting can be slow)
+set lazyredraw
+set ttyfast
+
 syntax on                                                               "Enable syntax highlighting
 filetype on                                                             "Detect file type
 match ErrorMsg '\s\+$'                                                  "Highlight trailing whitespace
