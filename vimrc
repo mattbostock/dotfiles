@@ -25,16 +25,6 @@ autocmd BufNewFile,BufRead *.vcl,*.vtc :set ft=vcl                      "VCL syn
 autocmd BufNewFile,BufRead *.json set filetype=javascript               "JSON syntax highlighting
 autocmd BufNewFile,BufRead *.md set filetype=markdown                   "Markdown, not modular2 for .md files
 
-"Golang, as per the README in $GOROOT/misc/vim
-filetype off
-filetype plugin indent off
-set rtp+=$GOROOT/misc/vim
-filetype plugin indent on
-syntax on
-autocmd FileType go setlocal noexpandtab | setlocal softtabstop=8 | setlocal shiftwidth=8
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-let g:gofmt_command = "goimports"
-
 "Vundle config
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -48,6 +38,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-rails.git'
 Plugin 'smerrill/vcl-vim-plugin.git'
 "Plugin 'scrooloose/syntastic'
+Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
 Plugin 'bling/vim-airline'
@@ -58,6 +49,12 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'junegunn/goyo.vim'
 Plugin 'ConradIrwin/vim-bracketed-paste.git'
+
+"Golang settings for vim-go plugin
+let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
 
 "Tagbar config
 autocmd FileType * nested :call tagbar#autoopen(0)                      "Always open Tagbar for supported files
