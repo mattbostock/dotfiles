@@ -1,3 +1,9 @@
+set shiftround                                                          "Indent by multiples of shiftwidth
+set expandtab                                                           "Use softtabstop spaces instead of tab characters for indentation
+set shiftwidth=2                                                        "Indent by 2 spaces when using >>, <<, == etc.
+set softtabstop=2                                                       "Indent by 2 spaces when pressing <TAB>
+set autoindent                                                          "Keep indentation from previous line
+
 autocmd FileType php setlocal shiftwidth=4 | setlocal softtabstop=4     "Use 4 spaces for PHP as per PSR standards
 
 set hlsearch                                                            "Highlight all search matches
@@ -68,7 +74,8 @@ let g:airline#extensions#tagbar#enabled = 1
 let g:airline_theme             = 'solarized'
 let g:airline_enable_branch     = 1
 let g:airline_enable_syntastic  = 1
-let g:airline_powerline_fonts   = 1
+let g:airline_left_sep          = ''
+let g:airline_right_sep         = ''
 
 "CtrlP
 let g:ctrlp_working_path_mode = 'ra'                                    "Set current working directory to be repository root if possible
