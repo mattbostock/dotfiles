@@ -50,3 +50,5 @@ helper = /opt/boxen/bin/boxen-git-credential
         status = auto
 [diff]
 	algorithm = patience
+[http]
+	cookiefile = /Users/matt/.gitcookies
