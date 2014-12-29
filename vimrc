@@ -63,7 +63,7 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 
 "Tagbar config
-autocmd FileType * nested :call tagbar#autoopen(0)                      "Always open Tagbar for supported files
+"autocmd FileType * nested :call tagbar#autoopen(0)                      "Always open Tagbar for supported files
 let g:tagbar_show_linenumbers = 1                                       "Show absolute line numbers
 
 "Airline status config
