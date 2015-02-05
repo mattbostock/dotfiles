@@ -30,6 +30,8 @@ autocmd FileType rst,gitcommit,markdown setlocal spell                  "Spellch
 autocmd BufNewFile,BufRead *.vcl,*.vtc :set ft=vcl                      "VCL syntax highlighting
 autocmd BufNewFile,BufRead *.json set filetype=javascript               "JSON syntax highlighting
 autocmd BufNewFile,BufRead *.md set filetype=markdown                   "Markdown, not modular2 for .md files
+autocmd BufNewFile,BufRead *.slide set filetype=slide                   "Go present slide format
+autocmd Syntax slide source ~/.vim/syntax/*.vim
 
 "Vundle config
 set rtp+=~/.vim/bundle/vundle/
