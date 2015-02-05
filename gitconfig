@@ -16,6 +16,9 @@ helper = /opt/boxen/bin/boxen-git-credential
         # Use current rather than simple for compat with older Git versions
         default = current
 
+[merge]
+    tool = vimdiff
+
 [alias]
         st = status
         ci = commit -v
