@@ -19,6 +19,9 @@ helper = /opt/boxen/bin/boxen-git-credential
 [merge]
     tool = vimdiff
 
+[mergetool]
+    prompt = false
+
 [alias]
         st = status
         ci = commit -v
