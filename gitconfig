@@ -54,10 +54,6 @@ helper = /opt/boxen/bin/boxen-git-credential
           xargs git branch --delete; \
         }; f"
 
-[color]
-        diff = auto
-        branch = auto
-        status = auto
 [diff]
 	algorithm = patience
 [http]
