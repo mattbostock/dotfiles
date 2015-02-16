@@ -6,7 +6,7 @@ Matt's personal configuration files for POSIX-compliant shell environments. Curr
 Prerequisites
 -------------
 
-The dotfiles presented here rely on by [Boxen configuration][boxen-config].
+The dotfiles presented here rely on my [Boxen configuration][boxen-config].
 When Boxen is run, it [clones this repository][boxen-clone] then runs `rcup` (see below).
 
 [boxen-config]: https://github.com/alphagov/gds-boxen/blob/master/modules/people/manifests/mattbostock.pp
