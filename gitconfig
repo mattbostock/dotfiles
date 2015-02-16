@@ -22,6 +22,9 @@ helper = /opt/boxen/bin/boxen-git-credential
 [mergetool]
     prompt = false
 
+[rebase]
+    autosquash = true
+
 [alias]
         st = status
         ci = commit -v
@@ -32,7 +35,6 @@ helper = /opt/boxen/bin/boxen-git-credential
         fpush = push -f origin head
         wdiff = diff --color-words
         re = rebase -i origin/master
-        autosmash = rebase -i origin/master --autosquash
 
         # Run a command in the git repo root, e.g. 'git exec rspec'
 	exec = "!exec "
