@@ -26,7 +26,7 @@ and run some [hooks][], for example installing the Vim plugins I use.
 
 Manual install:
 
-    rcup -x README.md -x LICENSE
+    rcup
 
 This will create symlinks for config files in your home directory.
 
