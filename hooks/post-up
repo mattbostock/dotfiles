@@ -4,6 +4,6 @@ if [ ! -e $HOME/.vim/bundle/vundle ]; then
   git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 fi
 
-vim +PluginInstall +GoInstallBinaries +qa
+vim +PluginUpdate +GoInstallBinaries +qa
 
 test -f ~/.vim/bundle/YouCompleteMe/third_party/ycmd/ycm_core.so || ~/.vim/bundle/YouCompleteMe/install.sh
