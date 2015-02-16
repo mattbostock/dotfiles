@@ -1,5 +1,5 @@
 Matt's dotfiles
-========
+===============
 
 Matt's personal configuration files for POSIX-compliant shell environments. Currently used on Mac OS X and Cygwin.
 
