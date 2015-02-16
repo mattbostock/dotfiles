@@ -33,7 +33,8 @@ helper = /opt/boxen/bin/boxen-git-credential
         br = branch -v
         lg = log --pretty=oneline --topo-order --graph --abbrev-commit --decorate
         fpush = push -f origin head
-        wdiff = diff --color-words
+        # Colour diff showing differences word-by-word, where a word is any singular character
+        wdiff = diff --color-words=.
         re = rebase -i origin/master
         belong = name-rev --name-only
 
