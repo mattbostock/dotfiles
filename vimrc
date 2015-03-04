@@ -41,7 +41,6 @@ call vundle#rc()
 "Let Vundle manage Vundle
 Plugin 'gmarik/vundle'
 
-"Plugin 'scrooloose/syntastic'
 Plugin 'ConradIrwin/vim-bracketed-paste.git'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'Valloric/YouCompleteMe'
@@ -78,7 +77,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_theme             = 'solarized'
 let g:airline_enable_branch     = 1
-let g:airline_enable_syntastic  = 1
 let g:airline_left_sep          = ''
 let g:airline_right_sep         = ''
 
