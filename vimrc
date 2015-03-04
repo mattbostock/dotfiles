@@ -59,6 +59,7 @@ Plugin 'smerrill/vcl-vim-plugin.git'
 Plugin 'tomtom/tlib_vim'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-rails.git'
+Plugin 'rodjek/vim-puppet.git'
 
 "Golang settings for vim-go plugin
 let g:go_fmt_command = "goimports"
