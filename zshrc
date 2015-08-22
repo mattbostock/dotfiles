@@ -56,6 +56,8 @@ plugins=(autojump git osx vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
 
