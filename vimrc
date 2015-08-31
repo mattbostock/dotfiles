@@ -27,7 +27,7 @@ filetype plugin indent on
 let &colorcolumn=join(map(copy(range(1,999)), "'+'.v:val"), ",")        "Highlight columns over value of &textwidth
 
 autocmd FileType rst,gitcommit,markdown,slide setlocal spell            "Spellcheck
-autocmd BufNewFile,BufRead *.vcl,*.vtc :set ft=vcl                      "VCL syntax highlighting
+autocmd BufNewFile,BufRead *.vcl,*.vtc :set filetype=vcl                "VCL syntax highlighting
 autocmd BufNewFile,BufRead *.json set filetype=javascript               "JSON syntax highlighting
 autocmd BufNewFile,BufRead *.pp set filetype=puppet
 autocmd BufNewFile,BufRead *.md set filetype=markdown                   "Markdown, not modular2 for .md files
