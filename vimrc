@@ -36,11 +36,11 @@ autocmd BufNewFile,BufRead *.slide set filetype=slide                   "Go pres
 autocmd Syntax slide source ~/.vim/syntax/*.vim
 
 "Vundle config
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 "Let Vundle manage Vundle
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ConradIrwin/vim-bracketed-paste.git'
 Plugin 'MarcWeber/vim-addon-mw-utils'
