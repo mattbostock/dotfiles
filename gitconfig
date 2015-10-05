@@ -37,6 +37,7 @@ helper = /opt/boxen/bin/boxen-git-credential
         wdiff = diff --color-words=.
         re = rebase -i origin/master
         belong = name-rev --name-only
+        stat = diff-tree --no-commit-id --name-only -r HEAD
 
         # Run a command in the git repo root, e.g. 'git exec rspec'
 	exec = "!exec "
