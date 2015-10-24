@@ -21,6 +21,7 @@ set ttyfast
 syntax on                                                               "Enable syntax highlighting
 filetype on                                                             "Detect file type
 match ErrorMsg '\s\+$'                                                  "Highlight trailing whitespace
+match ErrorMsg '[^\u0000-\u007F]'                                       "Highlight non-ASCII characters
 
 filetype plugin indent on
 
