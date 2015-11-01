@@ -10,8 +10,13 @@ if [ -n "${BASH_VERSION}" ]; then
   fi
 fi
 
-# Initialise ssh-agent
-source ${HOME}/.ssh-agent-setup.sh
+# Initialise gpg-agent (also used as an SSH agent)
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+  . "${HOME}/.gpg-agent-info"
+  export GPG_AGENT_INFO
+  export SSH_AUTH_SOCK
+fi
+export GPG_TTY=$(tty)
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
