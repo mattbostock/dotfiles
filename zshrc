@@ -14,6 +14,7 @@ alias wdiff="wdiff -n -w $'\033[30;41m' -x $'\033[0m' -y $'\033[30;42m' -z $'\03
 alias vi="vim"
 alias bx="bundle exec"
 alias brake="bundle exec rake"
+alias ack="ag $@"
 
 # Wikipedia lookup
 wikip () { dig +short txt "$*".wp.dg.cx; }
