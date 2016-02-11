@@ -60,6 +60,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-rails.git'
 Plugin 'rodjek/vim-puppet.git'
+Plugin 'scrooloose/syntastic'
 
 "Golang settings for vim-go plugin
 let g:go_fmt_command = "goimports"
