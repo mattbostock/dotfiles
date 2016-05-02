@@ -27,7 +27,7 @@ export VAGRANT_GOVUK_NFS=no
 export GOROOT=`go env GOROOT`
 export GOPATH=$HOME/go
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH:$GOPATH/bin
+export PATH=$HOME/.bin:/usr/local/bin:$PATH:$GOPATH/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
