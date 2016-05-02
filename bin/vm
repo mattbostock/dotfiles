@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cd ~/cf-repos/cf-vagrant && vagrant $1
