@@ -21,6 +21,7 @@ helper = /opt/boxen/bin/boxen-git-credential
 
 [mergetool]
     prompt = false
+    keepBackup = false
 
 [rebase]
     autosquash = true
