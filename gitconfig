@@ -63,3 +63,5 @@ helper = /opt/boxen/bin/boxen-git-credential
 	cookiefile = /Users/matt/.gitcookies
 [pull]
 	ff = only
+[interactive]
+	singleKey = true
