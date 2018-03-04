@@ -1,6 +1,5 @@
 [hub]
 protocol = ssh
-host = github.gds
 
 [credential]
 helper = /opt/boxen/bin/boxen-git-credential
