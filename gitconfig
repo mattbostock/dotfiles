@@ -1,67 +1,72 @@
 [hub]
-protocol = ssh
-	reportCrash = never
+  protocol = ssh
+  reportCrash = never
 
 [credential]
-helper = /opt/boxen/bin/boxen-git-credential
+  helper = /opt/boxen/bin/boxen-git-credential
 
 [core]
-        excludesfile = /opt/boxen/config/git/gitignore
+  excludesfile = /opt/boxen/config/git/gitignore
 
 [user]
-	email = matt@mattbostock.com
-	name = Matt Bostock
+  email = matt@mattbostock.com
+  name = Matt Bostock
 
 [push]
-        # Use current rather than simple for compat with older Git versions
-        default = current
+  # Use current rather than simple for compat with older Git versions
+  default = current
 
 [merge]
-    tool = vimdiff
+  tool = vimdiff
 
 [mergetool]
-    prompt = false
-    keepBackup = false
+  prompt = false
+  keepBackup = false
 
 [rebase]
-    autosquash = true
+  autosquash = true
 
 [alias]
-        st = status
-        ci = commit -v
-        co = checkout
-        cb = checkout -b
-        br = branch -v
-        lg = log --pretty=oneline --topo-order --graph --abbrev-commit --decorate
-        fpush = push --force-with-lease origin head
-        # Colour diff showing differences word-by-word, where a word is any singular character
-        wdiff = diff --color-words=.
-        re = rebase -i origin/master
-        belong = name-rev --name-only
-        stat = diff-tree --no-commit-id --name-only -r HEAD
+  st = status
+  ci = commit -v
+  co = checkout
+  cb = checkout -b
+  br = branch -v
+  lg = log --pretty=oneline --topo-order --graph --abbrev-commit --decorate
+  fpush = push --force-with-lease origin head
 
-        # Run a command in the git repo root, e.g. 'git exec rspec'
-	exec = "!exec "
+  # Colour diff showing differences word-by-word, where a word is any singular character
+  wdiff = diff --color-words=.
 
-        # Show branches by date of last commit
-        brdate = "! f() { \
-          for k in $(git branch $@ | sed 's/^..//; s/ .*//'); do \
-            echo "$(git log -1 --pretty='%Cgreen%ci %Cblue(%cr)%Creset ' $k) $k"; \
-          done | sort -r; \
-        }; f"
+  re = rebase -i origin/master
+  belong = name-rev --name-only
+  stat = diff-tree --no-commit-id --name-only -r HEAD
 
-        # Delete merged branches.
-        brc = "!f() { \
-          git branch --merged master |\
-          grep -v '^[ *] master$' |\
-          xargs git branch --delete; \
-        }; f"
+  # Run a command in the git repo root, e.g. 'git exec rspec'
+  exec = "!exec "
+
+  # Show branches by date of last commit
+  brdate = "! f() { \
+    for k in $(git branch $@ | sed 's/^..//; s/ .*//'); do \
+    echo "$(git log -1 --pretty='%Cgreen%ci %Cblue(%cr)%Creset ' $k) $k"; \
+    done | sort -r; \
+    }; f"
+
+  # Delete merged branches.
+  brc = "!f() { \
+    git branch --merged master |\
+    grep -v '^[ *] master$' |\
+    xargs git branch --delete; \
+    }; f"
 
 [diff]
-	algorithm = patience
+  algorithm = patience
+
 [http]
-	cookiefile = /Users/matt/.gitcookies
+  cookiefile = /Users/matt/.gitcookies
+
 [pull]
-	ff = only
+  ff = only
+
 [interactive]
-	singleKey = true
+  singleKey = true
