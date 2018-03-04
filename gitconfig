@@ -61,3 +61,5 @@ helper = /opt/boxen/bin/boxen-git-credential
 	algorithm = patience
 [http]
 	cookiefile = /Users/matt/.gitcookies
+[pull]
+	ff = only
